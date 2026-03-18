@@ -40,6 +40,9 @@ export const metadata: Metadata = {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
     apple: '/favicon.svg'
+  },
+  other: {
+    'fo-verify': '56e822c1-a4e1-4592-b1c9-4a46a4a85ad5'
   }
 };
 
