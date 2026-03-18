@@ -1,0 +1,135 @@
+/* Custom Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* Theme Variables */
+@theme {
+  /* Custom Colors */
+  --color-primary: #E91E8C;
+  --color-secondary: #FF6B35;
+  --color-accent: #FFD23F;
+  --color-purple: #6B21A8;
+  --color-background: #FFF8F0;
+  --color-text: #1A1A2E;
+  --color-light-gray: #F5F0EB;
+  --color-teal: #14B8A6;
+  --color-coral: #F97316;
+
+  /* Font Families */
+  --font-heading: 'Outfit', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Custom animations */
+  --animate-float: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Custom utility classes */
+.text-balance {
+  text-wrap: balance;
+}
+
+.mesh-gradient {
+  background: linear-gradient(135deg, 
+    #E91E8C 0%,
+    #FF6B35 35%,
+    #FFD23F 70%,
+    #6B21A8 100%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Article Content Styles */
+.article-content {
+  @apply text-lg leading-relaxed;
+}
+
+.article-content h2 {
+  @apply text-3xl font-bold mt-12 mb-6;
+}
+
+.article-content h3 {
+  @apply text-2xl font-bold mt-8 mb-4;
+}
+
+.article-content p {
+  @apply mb-6;
+}
+
+.article-content ul, .article-content ol {
+  @apply mb-6 ml-6;
+}
+
+.article-content li {
+  @apply mb-2;
+}
+
+.article-content ul li {
+  @apply list-disc;
+}
+
+.article-content ol li {
+  @apply list-decimal;
+}
+
+.article-content strong {
+  @apply font-semibold;
+}
+
+.article-content a {
+  @apply text-[var(--color-primary)] underline hover:text-[var(--color-purple)] transition-colors;
+}
+
+.article-content blockquote {
+  @apply border-l-4 border-[var(--color-primary)] pl-6 italic my-6;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-purple);
+}
