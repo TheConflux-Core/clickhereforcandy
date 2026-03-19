@@ -1,4 +1,4 @@
-export const SITE_NAME = 'ClickHereForCandy';
+export const SITE_NAME = 'ClickHereForCandy.com';
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://clickhereforcandy.com';
 export const SITE_DESCRIPTION = 'Discover the best candy, compare subscription boxes, find local candy stores, and get expert gift guides for every occasion.';
 export const SITE_TAGLINE = 'Your Guide to the Best Candy & Sweets';

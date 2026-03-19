@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   metadataBase: new URL(SITE_URL),
+  applicationName: SITE_NAME,
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -40,6 +41,10 @@ export const metadata: Metadata = {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
     apple: '/favicon.svg'
+  },
+  appleWebApp: {
+    title: SITE_NAME,
+    statusBarStyle: 'default'
   },
   other: {
     'fo-verify': '56e822c1-a4e1-4592-b1c9-4a46a4a85ad5',
