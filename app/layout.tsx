@@ -42,7 +42,9 @@ export const metadata: Metadata = {
     apple: '/favicon.svg'
   },
   other: {
-    'fo-verify': '56e822c1-a4e1-4592-b1c9-4a46a4a85ad5'
+    'fo-verify': '56e822c1-a4e1-4592-b1c9-4a46a4a85ad5',
+    'google-site-verification': 'placeholder-google-verification',
+    'msvalidate.01': 'placeholder-bing-verification'
   }
 };
 
