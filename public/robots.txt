@@ -1,0 +1,28 @@
+# ClickHereForCandy.com - Robots.txt
+# https://www.clickhereforcandy.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.clickhereforcandy.com/sitemap.xml
+
+# Crawl-delay (optional, polite crawling)
+Crawl-delay: 1
+
+# Allow all major search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Disallow admin and private areas (none currently)
+Disallow: /api/
+Disallow: /_next/
